@@ -1,13 +1,3 @@
-/* No adelantarse con esta parte seguir los pasos de los cursos*/
-/*Viri Avellaneda 16:54  Paleta de colores
-#85E0D6
-
-#BDE8E7
-#DBE0EA
-#F3D1CD
-#F6F6F6
-#EBEBEB
-#676767*/
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/Flaticon.eot");
@@ -52,7 +42,7 @@
   font-style: normal;
 }
 .btnPpal {
-  background: #F3D1CD !important;
+  background: #1f417e !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   transition: 0.5s;
@@ -66,7 +56,8 @@ body {
   font-family: 'Allerta', sans-serif;
 }
 .headerppal {
-  background:#85E0D6;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(5,33,34,1) 100%);
   overflow: hidden;
   box-shadow: 0 8px 10px rgba(0,0,0,0.5);
   padding-bottom: 30px;
@@ -118,7 +109,8 @@ body {
   transform: translateY(100px);
 }
 .menu {
-  background: #BDE8E7;
+  background: rgb(41,183,184);
+background: linear-gradient(0deg, rgba(41,183,184,1) 14%, rgba(34,168,125,1) 70%);
   border-left: 10px solid #fff;
   box-shadow: 0 8px 10px rgba(0,0,0,0.5);
 }
@@ -134,7 +126,7 @@ body {
   background: #85E0D6;
 }
 .menu ul li a {
-  color: #fff;
+  color: #021919;
   text-decoration: none;
   padding: 0 1em;
   transition: 0.6s;
@@ -144,7 +136,8 @@ body {
 }
 .footer {
   height: 100%;
-  background: #85E0D6;
+  background: rgb(34,193,195);
+  background: linear-gradient(179deg, rgba(34,193,195,1) 0%, rgba(5,33,34,1) 100%);
   margin: 0px;
 }
 .footer .contenedor-footer {
@@ -160,7 +153,7 @@ body {
 .footer .contenedor-footer .formulario-contactenos .form-col1,
 .footer .contenedor-footer .formulario-contactenos .form-col2 {
   margin-right: 30px;
-  color: #fff;
+  color: #021919;
   display: flex;
   flex-direction: column;
 label
@@ -170,7 +163,7 @@ label
   margin-bottom: 10px;
 }
 .footer .contenedor-footer .formulario-contactenos .form-col1 label {
-  color: #fff;
+  color: #021919;
 }
 .footer .contenedor-footer .formulario-contactenos .form-col1 {
   margin-top: 10px;
@@ -187,7 +180,7 @@ label
   align-items: flex-start;
 }
 .footer .contenedor-footer .formulario-contactenos .form-col2 label {
-  color: #fff;
+  color: #021919;
   margin-bottom: 1em;
 }
 .footer .contenedor-footer .formulario-contactenos .form-col2 textarea {
@@ -195,7 +188,7 @@ label
   height: 110px;
 }
 .footer .pie-de-pagina  {
-  color: #fff;
+  color: #021919;
   text-align: center;
   /*margin: 10px;*/
   /*display: flex;*/
@@ -339,7 +332,7 @@ label
   width: 100%;
 }
 .registro-bienvenida h4 {
-  color: #85E0D6;
+  color: #0f5556;
   font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -351,7 +344,7 @@ label
   text-align: left;
 }
 .registro-bienvenida span {
-  color: #F3D1CD;
+  color: #3479dc;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -362,7 +355,7 @@ label
   margin: 0;
 }
 .registro-formulario label {
-  color: #85E0D6;
+  color: #0f5556;
   font-size: 1em;
 }
 .registro-formulario a {
@@ -374,10 +367,10 @@ label
   text-align: center;
 }
 .registro-formulario .div-btnInicioSesion a {
-  background: #85E0D6 !important;
+  background: #1f417e !important;
 }
 .registro-formulario .lbl-ingresar-redes {
-  color: #85E0D6;
+  color: #0f5556;
   font-weight: bold;
   padding-top: 1em;
   text-align: center;
@@ -387,7 +380,7 @@ label
   text-align: center;
 }
 .registro-formulario .registro-iconos-redes .logo-facebook:before {
-  color: #F3D1CD;
+  color: #0f5556;
   content: "\f101";
   font-size: 40px;
   font-family: "Flaticon";
@@ -396,7 +389,7 @@ label
   margin-left: 1em;
 }
 .registro-formulario .registro-iconos-redes .logo-google:before {
-  color: #F3D1CD;
+  color: #0f5556;
   content: "\f2b3";
   font-size: 45px;
   font-family: "googleicon";
@@ -405,7 +398,7 @@ label
   margin-left: 1em;
 }
 .registro-formulario .registro-iconos-redes .logo-twitter:before {
-  color: #F3D1CD;
+  color: #0f5556;
   content: "\f102";
   font-size: 40px;
   font-family: "Flaticon";
@@ -416,10 +409,10 @@ label
   margin-bottom: 0em;
 }
 .div-btnRegistrarse a {
-  background: #85E0D6 !important;
+  background: #1f417e !important;
 }
 .titulo-posts {
-  color: #85E0D6;
+  color: #021919;
   font-weight: bold;
   text-align: center;
 }
