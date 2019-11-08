@@ -1,15 +1,16 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyDwACSIg8suX9RAdV7h_UKETj9gA_4J9SU",
-    authDomain: "womendevs-9c071.firebaseapp.com",
-    databaseURL: "https://womendevs-9c071.firebaseio.com",
-    projectId: "womendevs-9c071",
-    storageBucket: "",
-    messagingSenderId: "234094838471",
-    appId: "1:234094838471:web:83fa9853d4dd595e"
+  apiKey: "AIzaSyBpOxYDjb9ul17eymW4maik_ZOxB6b0xcA",
+  authDomain: "prueba-de-redsocial.firebaseapp.com",
+  databaseURL: "https://prueba-de-redsocial.firebaseio.com",
+  projectId: "prueba-de-redsocial",
+  storageBucket: "prueba-de-redsocial.appspot.com",
+  messagingSenderId: "792801296519",
+  appId: "1:792801296519:web:258f0469db05285f"
   };
-  // Init Firebase nuevamente
-  firebase.initializeApp(firebaseConfig);
+
+
+  
 
 
   // Guardar datos de las usuarias en la BD
