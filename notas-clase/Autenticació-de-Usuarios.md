@@ -6,7 +6,7 @@ CURSO DE FIREBASE PARA LA WEB
 * [3. Autenticación de USuarios](#3.-autenticación-de-usuarios)
    * >[3.1 Servicios de autenticación y configuración de usuarios](#3.1-servicios-de-autenticación-y-configuración-de-usuarios)
    * >[3.2 Autenticación por email y Redes Sociales](#3.2-autenticación-por-email-y-redes-sociales)
-   * >[1.3 Integraciones](#1.3-integraciones)
+   * >[3.3 Probar creación de usuario y autenticación](#3.3-probar-creación-de-usuario-y-autenticación)
    * >[1.4 Empresas que usan Firebas](#1.4-empresas-que-usan-Firebase)
 
 
@@ -29,3 +29,14 @@ Pasoso a seguir:
  
 
  ## *3.2 Autenticación por email y Redes Sociales*
+
+ Nos vamos primero a la consola de *Firebase* y selecionamos **Autenticación**.
+
+  * 1. En la pestaña de *Método de inicio de sección*, seleccionamos *Correo electronico y contraseña*. Y **Habilitamos esta sección**.
+  * 2. Despues damos **Guardar**.
+  * 3. Ahora nos vamos a nuestra consola y abrimos nuestra carpeta *auth* previamente creada.
+  * 4. Creamos el archivo *autenticacion.js* donde colacaremos las credenciales que nos proporciona firebase.
+  * 5. creamos la funcion de **crearCuentaEmailPass**
+    * 5.1 creamos la autenticación con gmail y pasword.
+    * 5.2 cramos la validación del usuario con las promesas y retornamos error en caso de no realizar el proceso.
+  * 6. ahora creamos un archivo *authController.js* donde indicaremos la funcionalidad de la autenticación con la apararicion de los modales.

@@ -1,8 +1,8 @@
 class Autenticacion {
   autEmailPass(email, password) {
-    firebase.auth().signInWithEmailAndPassword(email, password)
+    firebase.auth().signInWithEmailAndPassword(email, password) //esto de forma asincrona
       .then(result => {
-        if (result.user.emailVerifid) {
+        if (result.user.emailVerified) {
           $('#avatar').attr('src', 'imagenes/usuario_auth.png')
           Materialize.toast(`Bienvenida ${result.user.displayName}`, 5000)
         } else {
@@ -20,27 +20,25 @@ class Autenticacion {
         result.user.updateProfile({
           displayName: nombres
         })
+
         //Esa funcion crea un boton de continuar en la pagina de firebase para que direcciones a nuestra app web
         const configuracion = { // creo una constante donde direccionara a nuestra sitio web despues de validarse
-          url: '' //colocamos la url del localhost que nos proporciona Firebase
+          url : 'https://pamela-c-torres-gtz.github.io/MEX008-social-network/src/index.html' //colocamos la url del localhost que nos proporciona Firebase
         }
         result.user.sendEmailVerification(configuracion)
           .then((result) => console.log(result))
-          .catch(err => { // recibe la promesa con error y aqui es donde podemos mostrar un mensaje
-            console.error(err)
-            Materialize.toast(err.message, 4000)
+            .catch(err => { // recibe la promesa con error y aqui es donde podemos mostrar un mensaje
+             console.error(err)
+             Materialize.toast(err.message, 4000)
           })
       }).catch( err => {
         console.error(err)
         Materialize.toast(err.message, 4000)
       });
 
-
-
-
     //con esta instruccion le indicamos a firebase que no guarde las credenciales del usuario hasta
     //que se logee con el link de verificación
-    firebase.auth().signOut()
+    firebase.auth().singOut()
     // damos mensaje de bienvenida al usuario y decimos que  tiene que realizar el proceso de verificación
     Materialize.toast(
       `Bienvenido ${nombres}, debes realizar el proceso de verificación`,
