@@ -40,3 +40,31 @@ Pasoso a seguir:
     * 5.1 creamos la autenticación con gmail y pasword.
     * 5.2 cramos la validación del usuario con las promesas y retornamos error en caso de no realizar el proceso.
   * 6. ahora creamos un archivo *authController.js* donde indicaremos la funcionalidad de la autenticación con la apararicion de los modales.
+
+
+ ## *3.3 Probar creación de usuario y autenticación*
+
+1.  Para probar la autenticación revisar las notas de los archivos **authController.js** y **autenticacion.js** de la carpeta *auth*.
+
+ En cada paso coloco las notas necesarias. El funcionamiento de esta sección es el siguiente:
+
+ * Que se cree el usuario con una cuenta de correo electronico y contraseña.
+
+ * Que se le enviee un mensaje de autenticación a su correo y  tiene que validar su correo por medio del link que se le proporciono.
+
+ * Posteriormente regresa a la pagina e inicia seción con el correo y password que indico.
+
+ * Al accesar se muestra un mensaje de bienvenida y el avatar cambia. *(Por el momento solo con una imagen predefinida en la carpeta local)*.
+
+2. Creamos función para que salga se seción cuando haga clic en el Abatare.
+  
+  * Nos vamos al archivo de *general.js* y en la linea 38 se encuentra el fragmento del código.
+
+  * Después noa vamos a la consola de firebase y en la *pestaña* de **Usuarios**. Borramos los usuarios que tengamos registrados.
+
+  * Una vez terminado nos pasamos s la *pestaña* de **Pantillas** y en la opción de *Verificación de dirección de correo electrónico*, nos vamos al apartado de **Asunto** y lo personaliamos para nuestra app.
+
+  Ejemplo:
+
+  
+ 

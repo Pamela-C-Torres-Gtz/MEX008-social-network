@@ -35,6 +35,7 @@ $(() => {
     $('#modalSesion').modal('open')
   })
 
+  //Función para hacer que el susuario salga al dar click a la foto del avatare
   $('#avatar').click(() => {
     //llamamos a la libreria firebase y creamos nuestra promesa qu es .signOut
      firebase.auth().signOut()

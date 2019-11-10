@@ -109,13 +109,15 @@ body {
   transform: translateY(100px);
 }
 .menu {
-  background: rgb(41,183,184);
-background: linear-gradient(0deg, rgba(41,183,184,1) 14%, rgba(34,168,125,1) 70%);
+  background-color: #1da7a9;
+  /*background: rgb(41,183,184); 
+  background: linear-gradient(0deg, rgba(41,183,184,1) 14%, rgba(34,168,125,1) 70%);*/
   border-left: 10px solid #fff;
   box-shadow: 0 8px 10px rgba(0,0,0,0.5);
 }
 .menu ul {
   margin: 0px;
+
 }
 .menu ul li {
   display: block;
@@ -126,7 +128,7 @@ background: linear-gradient(0deg, rgba(41,183,184,1) 14%, rgba(34,168,125,1) 70%
   background: #85E0D6;
 }
 .menu ul li a {
-  color: #021919;
+  color:whitesmoke;
   text-decoration: none;
   padding: 0 1em;
   transition: 0.6s;
