@@ -47,7 +47,16 @@ class Autenticacion {
 } 
 
 authCuentaGoogle() {
-
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider)
+  .then(result => {  //con esto el usuario solo usara sus credenciales de google
+    $('#avatar').attr('src', result.user.photoURL)
+    Materialize.toast(`Bienvenido ${result.user.displayName} !! `, 400)
+  })
+    .catch(error =>{
+      console.error(error)
+      Materialize.toast(`Error al autenticarse con Google: ${error} `, 4000)
+    })
 }
 
 authCuentaFacebook() {

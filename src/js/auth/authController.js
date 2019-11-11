@@ -1,7 +1,6 @@
 $(() => {    
-  
      //*Vamos a crear una constante que es el objeto de la instancia de la clase de Autenticacion
-     /*const objAuth = new Autenticacion()*/
+     const objAuth = new Autenticacion()
 
     $("#btnRegistroEmail").click(() => {
         const nombres = $('#nombreContactoReg').val();
@@ -21,7 +20,7 @@ $(() => {
          auth.authEmailPass(email, password)
     });
   
-    //$("#authGoogle").click(() => //AUTH con GOOGLE);
+    $("#authGoogle").click(() => objAuth.authCuentaGoogle());//se habilita el click en icono de google.
 
     //$("#authTwitter").click(() => //AUTH con Twitter);
     
