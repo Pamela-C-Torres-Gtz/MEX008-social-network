@@ -67,7 +67,7 @@ authCuentaFacebook() {
     Materialize.toast(`Bienvenida ${result.user.displayName} !!`, 400)
   })
   .catch(err =>{
-    console.error(err)
+    //console.error(err)
     Materialize.toast(`Error al autenticarse con Facebook: ${err}`, 4000)
   })
 }

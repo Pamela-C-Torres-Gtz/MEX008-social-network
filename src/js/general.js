@@ -6,13 +6,30 @@ $(() => {
   // Init Firebase nuevamente
   firebase.initializeApp(firebaseConfig);
   
+  //trabajamos con es observador del estado para manejar las cuentas de usuario.
+  firebase.auth().onAuthStateChanged(user =>{
+    if(user){
+      $('#btnInicioSesion').text('Salir')
+      if(user.photoURL){
+       /$('#avatare').attr('src', user.photoURL)
+      }
+    }
+  })
 
-  // TODO: Evento boton inicio sesion
+  // TODO: Evento boton inicio sesion que cambie con el estado del logeo
   $('#btnInicioSesion').click(() => {
-    //$('#avatar').attr('src', 'imagenes/usuario.png')
-    // Materialize.toast(`Error al realizar SignOut => ${error}`, 4000)
+    const user = firebase.auth().currentUser
+    if(user){
+      $('#btnInicioSesion').text('Iniciar Sesion')
+      return firebase.auth().signOut().then(() => {
+        $('#avatar').attr('src', 'imagenes/usuario.pgn')
+        Materialize.toast(`SignOut Correcto`, 4000)
+      }).chatch(err =>{
+        Materialize.toast(`Error al realizar SingOut => ${error}`, 4000)
+      })
+    }
     
-
+    //Solo si esta bien la autenticación el se borraran los valores de pasword y email
     $('#emailSesion').val('')
     $('#passwordSesion').val('')
     $('#modalSesion').modal('open')

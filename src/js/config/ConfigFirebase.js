@@ -9,15 +9,4 @@ var firebaseConfig = {
     appId: "1:792801296519:web:258f0469db05285f"
   };
 
-  // Guardar datos de las usuarias en la BD
-const saveData = (userId, name, email, imageUrl) => {
-  firebase.database().ref('users/' + userId).
-  set({
-    username: name,
-    email: email,
-    picture: imageUrl,
-    id: userId,
-  });
-}
-
-// Registro de Usuarios Nuevos
+ 
