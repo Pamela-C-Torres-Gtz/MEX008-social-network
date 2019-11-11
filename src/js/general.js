@@ -11,7 +11,7 @@ $(() => {
     if(user){
       $('#btnInicioSesion').text('Salir')
       if(user.photoURL){
-       /$('#avatare').attr('src', user.photoURL)
+       $('#avatare').attr('src', user.photoURL)
       }
     }
   })
