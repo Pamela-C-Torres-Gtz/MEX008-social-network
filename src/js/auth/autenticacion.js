@@ -51,6 +51,7 @@ authCuentaGoogle() {
   firebase.auth().signInWithPopup(provider)
   .then(result => {  //con esto el usuario solo usara sus credenciales de google
     $('#avatar').attr('src', result.user.photoURL)
+    $('.modal').modal('close')
     Materialize.toast(`Bienvenido ${result.user.displayName} !! `, 400)
   })
     .catch(error =>{
