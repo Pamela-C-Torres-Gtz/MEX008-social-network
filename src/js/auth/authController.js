@@ -22,7 +22,7 @@ $(() => {
   
     $("#authGoogle").click(() => objAuth.authCuentaGoogle());//se habilita el click en icono de google.
 
-    //$("#authTwitter").click(() => //AUTH con Twitter);
+    $("#authFB").click(() => objAuth.authCuentaFacebook())//se habilita el click en icono de facebock.
     
 
     $('#btnRegistrarse').click(() => {

@@ -381,6 +381,9 @@ label
   background: #fff !important;
   text-align: center;
 }
+.registro-formulario .registro-iconos-redes .logo-facebook {
+  margin-left: 1em;
+}
 .registro-formulario .registro-iconos-redes .logo-facebook:before {
   color: #0f5556;
   content: "\f101";
@@ -402,6 +405,16 @@ label
 .registro-formulario .registro-iconos-redes .logo-twitter:before {
   color: #0f5556;
   content: "\f102";
+  font-size: 40px;
+  font-family: "Flaticon";
+}
+
+.registro-formulario .registro-iconos-redes .logo-github {
+  margin-left: 1em;
+}
+.registro-formulario .registro-iconos-redes .logo-github:before {
+  color: #0f5556;
+  content: "\f100";
   font-size: 40px;
   font-family: "Flaticon";
 }
