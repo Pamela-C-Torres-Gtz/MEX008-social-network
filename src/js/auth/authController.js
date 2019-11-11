@@ -24,6 +24,7 @@ $(() => {
 
     $("#authFB").click(() => objAuth.authCuentaFacebook())//se habilita el click en icono de facebock.
     
+    $("#authGitHub").click(() => objAuth.authGitHub())//se habilita el click en icono de github.
 
     $('#btnRegistrarse').click(() => {
         $('#modalSesion').modal('close');

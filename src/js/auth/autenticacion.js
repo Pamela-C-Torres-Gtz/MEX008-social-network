@@ -36,7 +36,7 @@ class Autenticacion {
          firebase.auth().signOut()
         // damos mensaje de bienvenida al usuario y decimos que  tiene que realizar el proceso de verificación
         Materialize.toast(
-      `Bienvenido ${nombres}, debes realizar el proceso de verificación`,
+      `Bienvenida ${nombres}, debes realizar el proceso de verificación`,
       4000)
     //cerramos la ventana emergente
     $('.modal').modal('close')
@@ -51,7 +51,7 @@ authCuentaGoogle() {
   firebase.auth().signInWithPopup(provider).then(result => {  //con esto el usuario solo usara sus credenciales de google
     $('#avatar').attr('src', result.user.photoURL)
     $('.modal').modal('close')
-    Materialize.toast(`Bienvenido ${result.user.displayName} !!`, 400)
+    Materialize.toast(`Bienvenida ${result.user.displayName} !!`, 400)
   })
     .catch(err =>{
       /*console.error(err)*/
@@ -64,7 +64,7 @@ authCuentaFacebook() {
   firebase.auth().signInWithPopup(provider).then(result => {  //con esto el usuario solo usara sus credenciales de google
     $('#avatar').attr('src', result.user.photoURL)
     $('.modal').modal('close')
-    Materialize.toast(`Bienvenido ${result.user.displayName} !!`, 400)
+    Materialize.toast(`Bienvenida ${result.user.displayName} !!`, 400)
   })
   .catch(err =>{
     console.error(err)
@@ -74,5 +74,18 @@ authCuentaFacebook() {
 
 authTwitter() {
   // TODO: Crear auth con twitter
+}
+
+authGitHub(){
+  const provider = new firebase.auth.GithubAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(result => {  //con esto el usuario solo usara sus credenciales de google
+    $('#avatar').attr('src', result.user.photoURL)
+    $('.modal').modal('close')
+    Materialize.toast(`Bienvenida ${result.user.displayName} !!`, 400)
+  })
+  .catch(err =>{
+    console.error(err)
+    Materialize.toast(`Error al autenticarse con GitHub: ${err}`, 4000)
+  })
 }
 }
